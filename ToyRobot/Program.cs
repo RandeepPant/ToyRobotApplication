@@ -5,10 +5,11 @@ class Program
 {
     static string[] validParameters = { "PLACE", "MOVE", "LEFT", "RIGHT", "REPORT" }; // Valid commands
     static Robot robot = new Robot(); 
-    static int tableSize = 5; // 5x5 table
+    const int tableSize = 5; // 5x5 table
 
     static void Main()
     {
+        // display the available command 
         DisplayHelp();
 
         while (true)
